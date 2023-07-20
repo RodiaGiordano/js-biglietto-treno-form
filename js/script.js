@@ -3,6 +3,8 @@ const price = 0.21;
 
 const userSubmit = document.getElementById("user_submit");
 
+const userName = document.getElementById("user_name");
+
 const userAge = document.getElementById("user_age");
 
 const userKm = document.getElementById("user_km");
@@ -13,7 +15,7 @@ const userKm = document.getElementById("user_km");
 userSubmit.addEventListener("click", function(){
 
     
-
+let name = (userName.value);
 let age = parseInt(userAge.value);
 let km = parseFloat(userKm.value);  
 
@@ -44,7 +46,7 @@ else {
     userAge.value = "";
     userKm.value = "";
 
-    document.getElementById("ticket").innerHTML = "il prezzo del biglietto è: " + ticketPrice.toFixed(2) + "€";
+    document.getElementById("ticket").innerHTML = name + " il prezzo del biglietto è: " + ticketPrice.toFixed(2) + "€";
     
    
 }
