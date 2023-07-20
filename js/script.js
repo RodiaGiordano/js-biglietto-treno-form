@@ -15,7 +15,7 @@ userSubmit.addEventListener("click", function(){
     
 
 let age = parseInt(userAge.value);
-let km = parseInt(userKm.value);  
+let km = parsefloat(userKm.value);  
 
 
 console.log(typeof age)
