@@ -17,37 +17,44 @@
         <div class="container">
             <div class="row">
                 <div class="col">                  
-                    
-                    <h2 class="text-light text-uppercase display-5 fw-bold text-center">calcola il prezzo del tuo biglietto</h2>
-                    <div class="card">
-                        <div class="card-body d-flex justify-content-center gap-5">
+                    <h2 class="text-light text-uppercase display-5 fw-bold text-center py-3">calcola il prezzo del tuo biglietto</h2>
+                    <div class="card py-5 rounded-5">
+                        <div class="card-body d-flex justify-content-center gap-5 flex-wrap text-center">
                         
-                            <div class="col-3 text-center">
-                                <label for="user_name" class="form-label">Nome e Cognome</label>
+                            <div class="col-3">
+                                <label for="user_name" class="form-label fs-3 fw-bold text-danger">Nome e Cognome</label>
                                 <input type="text" name="user_name" id="user_name" class="form-control">
                             </div>
 
 
                         
-                            <div class="col-3 text-center">
-                                <label for="user_km" class="form-label">Km da percorrere</label>
+                            <div class="col-3">
+                                <label for="user_km" class="form-label fs-3 fw-bold text-danger">Km da percorrere</label>
                                 <input type="text" id="user_km" name="user_km" class="form-control">                            
                             </div>
 
 
                         
-                            <div class="col-3 text-center">
-                                <label for="user_age" class="form-label">Fascia d'età</label>
+                            <div class="col-3">
+                                <label for="user_age" class="form-label fs-3 fw-bold text-danger">Fascia d'età</label>
                                 <input type="text" id="user_age" name="user_age" class="form-control">
+                            </div>
+                            
+                            <div class="col-12 fs-2">
+                                <input type="submit" id="user_submit" value="Genera">
+                                <input type="reset" id="user_submit" value="Annulla">
                             </div>
                         </div>
                     </div>
-                        
-                                
-                                
-                    <input type="submit" id="user_submit">
-                        
                 </div>
+                    
+                        
+
+                        
+                                
+                                
+                    
+                        
             </div>
         </div>
     </main>
