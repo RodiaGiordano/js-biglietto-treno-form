@@ -36,7 +36,8 @@ let km = parseFloat(userKm.value);
 
 
 if (isNaN (age) || isNaN(km) || name == ("")){
-        alert("Compila tutti i campi - premere F5")
+        alert("Compila tutti i campi")
+        
 } 
 
 
