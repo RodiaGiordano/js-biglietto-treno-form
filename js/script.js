@@ -16,7 +16,7 @@ const userKm = document.getElementById("user_km");
 userReset.addEventListener("click", function(){
 
     userName.value = "";
-    userAge.value = "";
+    userAge.value = "Seleziona Età"
     userKm.value = "";
 
 })
@@ -31,7 +31,7 @@ let km = parseFloat(userKm.value);
 
 
 if (isNaN (age) || isNaN(km)){
-        alert("Accetta solo caratteri numerici - premere F5")
+        alert("Compila tutti i campi - premere F5")
 } 
 
 else {
@@ -48,7 +48,7 @@ else {
     }
 
     userName.value = "";
-    userAge.value = "";
+    userAge.value = "Seleziona Età";
     userKm.value = "";
 
     document.getElementById("ticket").innerHTML = name + " il prezzo del biglietto è: " + ticketPrice.toFixed(2) + "€";
