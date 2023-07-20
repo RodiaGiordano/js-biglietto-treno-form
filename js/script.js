@@ -3,12 +3,23 @@ const price = 0.21;
 
 const userSubmit = document.getElementById("user_submit");
 
+const userReset = document.getElementById("user_reset")
+
 const userName = document.getElementById("user_name");
 
 const userAge = document.getElementById("user_age");
 
 const userKm = document.getElementById("user_km");
  
+
+
+userReset.addEventListener("click", function(){
+
+    userName.value = "";
+    userAge.value = "";
+    userKm.value = "";
+
+})
 
 
 
@@ -42,7 +53,7 @@ else {
         ticketPrice *= 0.8;
     }
 
-    
+    userName.value = "";
     userAge.value = "";
     userKm.value = "";
 
