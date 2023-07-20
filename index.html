@@ -37,7 +37,23 @@
                         
                             <div class="col-3">
                                 <label for="user_age" class="form-label fs-3 fw-bold text-danger">Fascia d'età</label>
-                                <input type="text" id="user_age" name="user_age" class="form-control">
+                                
+
+                                <select name="user_age" id="user_age" class="form-select">
+                                    <option selected>Seleziona Età</option>
+                                    <option value="1">Minorenne</option>
+                                    <option value="2">Maggiorenne</option>
+                                    <option value="3">Over 65</option>
+                                  </select>
+
+                                <!--<select name="user_age" id="user_age" class="form-control">
+                                    <option value="0">Seleziona Età</option>
+                                    <option value="1">Minorenne</option>
+                                    <option value="2">Maggiorenne</option>
+                                    <option value="3">Over 65</option>
+                                </select>
+                                
+                                 <input type="text" id="user_age" name="user_age" class="form-control"> -->
                             </div>
                             
                             <div class="col-12 fs-2">

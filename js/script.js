@@ -3,7 +3,7 @@ const price = 0.21;
 
 const userSubmit = document.getElementById("user_submit");
 
-const userReset = document.getElementById("user_reset")
+const userReset = document.getElementById("user_reset");
 
 const userName = document.getElementById("user_name");
 
@@ -22,18 +22,12 @@ userReset.addEventListener("click", function(){
 })
 
 
-
 userSubmit.addEventListener("click", function(){
 
     
 let name = (userName.value);
 let age = parseInt(userAge.value);
 let km = parseFloat(userKm.value);  
-
-
-console.log(typeof age)
-console.log(age)
-
 
 
 if (isNaN (age) || isNaN(km)){
@@ -44,12 +38,12 @@ else {
 
     ticketPrice = price * km;
 
-    if (age >65){
+    if (age == 3){
 
         ticketPrice *= 0.6;       
     }
 
-    else if (age <18){
+    else if (age == 1){
         ticketPrice *= 0.8;
     }
 
