@@ -13,50 +13,41 @@ const userKm = document.getElementById("user_km");
 userSubmit.addEventListener("click", function(){
 
 
-    
+let age = parseInt(userAge.value);
+let km = parseInt(userKm.value);  
+
+console.log(typeof age)
+console.log(age)
 
 
-
-    
-console.log(typeof userAge + " Tipo")
-console.log(userAge + " Valore")
-console.log(typeof userKm + "Tipo")
-console.log(userKm + " Valore")   
-
-
-
-
-    if (isNaN (userAge) || isNaN(userKm)){
+if (isNaN (age) || isNaN(km)){
         alert("Accetta solo caratteri numerici - premere F5")
-    } 
+} 
 
-    else {
+else {
 
-        ticketPrice = price * userKm;
+    ticketPrice = price * km;
 
-
-
-    if (userAge >65){
+    if (age >65){
 
         ticketPrice *= 0.8;       
     }
 
-    else if (userAge <18){
+    else if (age <18){
         ticketPrice *= 0.6;
     }
 
 
+    document.getElementById("ticket").innerHTML = "il prezzo del biglietto è: " + ticketPrice.toFixed(2) + "€";
+    
+}
+
+})
     
 
 
-    document.getElementById("ticket").innerHTML = "il prezzo del biglietto è: " + ticketPrice.toFixed(2) + "€";
 
 
-}
-
-
-
-})
 
 
 
